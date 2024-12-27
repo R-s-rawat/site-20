@@ -6,7 +6,12 @@ const userSlice = createSlice({
   // initialState:[],
   initialState: userList,
   reducers:{
-
+    // after adding FORM ADD USER onSubmit=handleSubmit
+    addUser:(state, action)=>{
+      console.log(action);
+    }
   }
 })
+
+export const {addUser} = userSlice.actions
 export default userSlice.reducer; 
