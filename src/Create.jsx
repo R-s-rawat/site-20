@@ -10,7 +10,7 @@ const Create = () => {
         <div>
           <label htmlFor='name'>Name:</label>
           <input type='text' name='name' className='form-control'/>
-        </div>
+        </div> 
         <div>
           <label htmlFor='name'>Email:</label>
           <input type='email' name='email' className='form-control'/> 
