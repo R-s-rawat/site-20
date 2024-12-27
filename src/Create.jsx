@@ -9,11 +9,11 @@ const Create = () => {
       <form>
         <div>
           <label htmlFor='name'>Name:</label>
-          <input type='text' name='name' className='form-control'/>
+          <input type='text' name='name' className='form-control' placeholder='enter name'/>
         </div> 
         <div>
           <label htmlFor='name'>Email:</label>
-          <input type='email' name='email' className='form-control'/> 
+          <input type='email' name='email' className='form-control' placeholder='enter email'/> 
         </div>
         <br/>
         <button className='btn btn-info'>Submit</button>
