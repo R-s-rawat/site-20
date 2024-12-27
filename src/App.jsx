@@ -1,29 +1,20 @@
 import { useState } from 'react'
 import Home from './Home'
-// import express from 'express'
-
-// const app = express();
-// const port = process.env.PORT || 3001;
-
+// node_modules/bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Create from './Create'
 
 function App() {
- 
-//   const app = express();
-// const port = process.env.PORT || 3001;
-
-// app.get("/", (req, res) => {
-//   res.send("Hello World!");
-// });
-
-// app.listen(port, () => {
-//   console.log(`Listening on port ${port}...`);
-// });
 
   return (
   <>
-  {/* //bootstrap working */}
-  {/* <button type='button' class='btn btn-primary'>Primary</button> */}
-  <Home/>
+ <BrowserRouter>
+ <Routes>
+  <Route path='/' element={<Home/>}></Route>
+  <Route path='/create' element={<Create/>}></Route>
+ </Routes>
+ </BrowserRouter>
   </>
   )
 }
