@@ -13,7 +13,7 @@ const Create = () => {
         </div>
         <div>
           <label htmlFor='name'>Email:</label>
-          <input type='email' name='email' className='form-control'/>
+          <input type='email' name='email' className='form-control'/> 
         </div>
         <br/>
         <button className='btn btn-info'>Submit</button>
